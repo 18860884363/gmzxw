@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #container {
+            width: 100%;
+            height: 100%;
+        }
+
+        /*中间背景*/
+
+        #container .swiper-container {
+            width: 100%;
+            height: 646px;
+            background: #e7ebee;
+        }
+
+
+        #container .swiper-container .swiper-wrapper .swiper-slide {
+            width: 100%;
+            height: 608px;
+        }
+
+
+        #container .swiper-container .swiper-wrapper div:nth-child(1) {
+            background: url("img/bg.jpg") no-repeat;
+            background-size: 100% 100%;
+        }
+
+        #container .swiper-container .swiper-wrapper div:nth-child(2) {
+            background: yellow;
+        }
+
+        #container .swiper-container .swiper-wrapper div:nth-child(3) {
+            background: red;
+
+        }
+
+        /*分页器*/
+
+        .swiper-pagination-bullet {
+            width: 40px;
+            height: 6px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color: #000;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+        }
+
+        .swiper-pagination-bullet-active {
+            color: #fff;
+            background: #007aff;
+        }
+
+        #container .banner ul li:last-child {
+            margin: 0;
+        }
+
+        #container .banner ul li.banner-active {
+            background: #24a6e6;
+        }
+
+        /*地图*/
+
+        #container .address {
+            width: 100%;
+            height: 600px;
+            background: #e7ebee;
+            padding-top: 46px;
+        }
+
+        #container .address ul {
+            width: 1200px;
+            height: 166px;
+            margin: 0 auto;
+        }
+
+        #container .address ul li {
+            width: 133px;
+            height: 166px;
+            text-align: center;
+            float: left;
+        }
+
+        #container .address ul li span {
+            width: 100%;
+            height: auto;
+            display: block;
+            font-size: 14px;
+            margin-top: 6px;
+        }
+
+        #container .address ul li .address-text {
+            color: #24a6e6;
+        }
+
+        /*图片列表*/
+
+        #container .imglist {
+            width: 100%;
+            height: 988px;
+            position: absolute;
+            top: 1052px;
+            left: 0;
+            z-index: 999;
+        }
+
+        #container .imgcCirculation {
+            width: 1198px;
+            height: 986px;
+            border: 1px solid #cdd6dc;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        #container .imgcCirculation .imgcHeader {
+            width: 1198px;
+            height: 892px;
+            margin: 0 auto;
+        }
+
+        #container .imgcCirculation .imgcHeader ul {
+            width: 1155px;
+            height: 892px;
+            margin: 0 auto;
+        }
+
+        #container .imgcCirculation .imgcHeader ul li {
+            width: 364px;
+            height: 282px;
+            float: left;
+            margin-right: 30px;
+            margin-top: 15px;
+        }
+
+        #container .imgcCirculation .imgcHeader ul li img.imgactive {
+            width: 364px;
+            height: 223px;
+            border: 4px solid #cdd6dc;
+        }
+
+        #container .imgcCirculation .imgcHeader ul li:nth-child(3) {
+            margin-right: 0px;
+        }
+
+        #container .imgcCirculation .imgcHeader ul li:nth-child(6) {
+            margin-right: 0px;
+        }
+
+        #container .imgcCirculation .imgcHeader ul li:nth-child(9) {
+            margin-right: 0px;
+        }
+
+        #container .imgcCirculation .imgcHeader ul li div {
+            width: 100%;
+            height: 55px;
+        }
+
+        #container .imgcCirculation .imgcHeader ul li div span {
+            width: 98px;
+            height: 55px;
+            float: left;
+            margin-right: 30px;
+            text-align: center;
+            line-height: 55px;
+            font-size: 18px;
+            color: #24a6e6;
+
+        }
+
+        #container .imgcCirculation .imgcHeader ul li div span:nth-child(2) {
+            color: #ff6800;
+        }
+
+        #container .imgcCirculation .imgcHeader ul li div span:last-child {
+            margin-right: 0px;
+            text-align: right;
+        }
+
+        #container .imgcCirculation .imgcHeader ul li div span.jiage {
+            color: #24a6e6;
+        }
+
+        #container .imgcCirculation .imgcmore {
+            width: 1155px;
+            height: 40px;
+            margin: 0 auto;
+            border: 1px dotted #cdd6dc;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+
+        /*售后服务*/
+
+        #container .shouhou {
+            width: 100%;
+            height: 1266px;
+        }
+
+        #container .shouhou .sh-top {
+            width: 100%;
+            height: 696px;
+            background: #fff;
+        }
+
+        #container .shouhou .sh-bottom {
+            width: 100%;
+            height: 570px;
+            background: #e7ebee;
+            position: relative;
+        }
+
+        #container .shouhou .sh-bottom .shouhouPic {
+            width: 367px;
+            height: 316px;
+            margin: 0 auto;
+        }
+
+        /*流程*/
+
+        #container .shouhou .sh-bottom .flow {
+            width: 100%;
+            height: 1430px;
+            position: absolute;
+            top: 310px;
+            left: 0;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content {
+            width: 1200px;
+            height: 1368px;
+            margin: 0 auto;
+            border: 1px solid #cdd6dc;
+            background: #fff;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul {
+            width: 1200px;
+            height: 1430px;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li {
+            width: 100%;
+            height: auto;
+            clear: both;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li .flc-left {
+            width: 96px;
+            float: left;
+            text-align: center;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li:nth-child(1) .flc-left .xuxian {
+            height: 130px;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li:nth-child(2) .flc-left .xuxian {
+            height: 130px;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li:nth-child(5) .flc-left .xuxian {
+            height: 160px;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li .flc-left .xuxian {
+            width: 2px;
+            height: 84px;
+            margin: 0 auto;
+            background: url("img/xuxian.png");
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li .flc-left .no-xuxian {
+            background: none;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li .flc-right {
+            width: 1080px;
+            float: left;
+            border-bottom: 1px dotted #b2b2b2;
+            padding-bottom: 20px;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li:nth-child(1) {
+            padding-top: 20px;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li:nth-child(1) .flc-right p:nth-child(1) {
+            padding-top: 0;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li .flc-right p {
+            font-size: 16px;
+            color: #333333;
+            line-height: 36px;
+        }
+
+        #container .shouhou .sh-bottom .flow .flow-content ul li .flc-right p:nth-child(1) {
+            padding-top: 20px;
+            font-weight: bold;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*墓价对比*/
+
+        #container .jiageComparison {
+            width: 100%;
+            height: 2196px;
+            background: red;
+        }
+
+        #container .jiageComparison .jc-one {
+            width: 100%;
+            height: 1220px;
+            background: #fff;
+        }
+
+        #container .jiageComparison .jc-two {
+            width: 100%;
+            height: 562px;
+            background: #e7ebee;
+            position: relative;
+        }
+
+        #container .jiageComparison .jc-two .jt-pic {
+            width: 309px;
+            height: 291px;
+            margin: 0 auto;
+        }
+
+        #container .jiageComparison .jc-two .jt-content {
+            width: 100%;
+            height: 612px;
+            position: absolute;
+            top: 306px;
+            left: 0;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list {
+            width: 1200px;
+            height: 612px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #cdd6dc;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table {
+            width: 1159px;
+            height: 579px;
+            margin: 20px auto 0;
+            border-bottom: 2px solid #24a6e6;
+            text-align: center;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table tr {
+            height: 40px;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table tr:nth-child(1) td {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table tr:nth-child(1) {
+            background: #24a6e6;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table tr:nth-child(2) {
+            background: #b3e5fc;
+        }
+
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table tr:nth-child(4) {
+            background: #b3e5fc;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table tr:nth-child(6) {
+            background: #b3e5fc;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table tr:nth-child(8) {
+            background: #b3e5fc;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table tr:nth-child(10) {
+            background: #b3e5fc;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table tr:nth-child(12) {
+            background: #b3e5fc;
+        }
+
+        #container .jiageComparison .jc-two .jt-content .jt-list table tr td {
+            color: #000;
+            font-size: 14px;
+        }
+
+        #container .jiageComparison .jc-three {
+            width: 100%;
+            height: 414px;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <!--头部-->
+        <div class="header">
+            <!--头部标题-->
+            <div class="header-content">
+                <div class="hc">
+                    <div class="hc-left">
+                        <div class="hc-left-icon">
+                            <img src="img/header-icon.jpg" alt="图标" width="88" height="96">
+                        </div>
+                        <div class="hc-left-text">
+                            <img src="img/icon_02.jpg" alt="公墓直销网" width="213" height="99">
+                        </div>
+                    </div>
+                    <div class="hc-right">
+                        <span>
+                            <p>
+                                <img src="img/kefu.png" alt="客服" width="12" height="12"> 24小时服务热线</p>
+                            <p>400-888-8888</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="hn-left">
+                    <img src="img/sanheng.jpg" alt="" width="42" height="33">
+                </div>
+                <div class="hn-right">
+                    <ul>
+                        <li>
+                            <a href="#" class="navActive">首页</a>
+                        </li>
+                        <li>
+                            <a href="html/gwlc.html">购墓流程</a>
+                        </li>
+                        <li>
+                            <a href="html/yykm.html">预约看墓</a>
+                        </li>
+                        <li>
+                            <a href="html/shfw.html">售后服务</a>
+                        </li>
+                        <li>
+                            <a href="#">墓价对比</a>
+                        </li>
+                        <li>
+                            <a href="#">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--背景-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!--地图-->
+        <div class="address">
+            <ul>
+                <li>
+                    <img class="address-active" src="img/address1.png" alt="全部" width="100" height="100">
+                    <span class="address-text">全部</span>
+                </li>
+                <li>
+                    <img class="address-active" src="img/address2.png" alt="青浦" width="100" height="100">
+                    <span>青浦</span>
+                </li>
+                <li>
+                    <img class="address-active" src="img/address3.png" alt="嘉定" width="100" height="100">
+                    <span>嘉定</span>
+                </li>
+                <li>
+                    <img class="address-active" src="img/address4.png" alt="浦东" width="100" height="100">
+                    <span>浦东</span>
+                </li>
+                <li>
+                    <img class="address-active" src="img/address5.png" alt="松江" width="100" height="100">
+                    <span>松江</span>
+                </li>
+                <li>
+                    <img class="address-active" src="img/address6.png" alt="金山" width="100" height="100">
+                    <span>金山</span>
+                </li>
+                <li>
+                    <img class="address-active" src="img/address7.png" alt="太仓" width="100" height="100">
+                    <span>太仓</span>
+                </li>
+                <li>
+                    <img class="address-active" src="img/address8.png" alt="浏河" width="100" height="100">
+                    <span>浏河</span>
+                </li>
+                <li>
+                    <img class="address-active" src="img/address9.png" alt="崇明" width="100" height="100">
+                    <span>崇明</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--图片列表-->
+        <div class="imglist">
+            <div class="imgcCirculation">
+                <div class="imgcHeader">
+                    <ul>
+                        <li>
+                            <img src="img/imglist1.jpg" alt="" width="364" height="223" class="imgactive" title="双凤纪念园">
+                            <div class="img-content">
+                                <span>双凤纪念园</span>
+                                <span class="jiage jiaColor">￥0.98万起</span>
+                                <span>太仓
+                                    <img src="img/address.png" alt="地图" width="16" height="16">
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/imglist2.jpg" alt="" width="364" height="223">
+                            <div class="img-content">
+                                <span>长青烈士陵园</span>
+                                <span class="jiaColor">￥0.98万起</span>
+                                <span>太仓
+                                    <img src="img/address.png" alt="地图" width="16" height="16">
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/imglist3.jpg" alt="" width="364" height="223">
+                            <div class="img-content">
+                                <span>至尊园</span>
+                                <span class="jiaColor">￥0.98万起</span>
+                                <span>太仓
+                                    <img src="img/address.png" alt="地图" width="16" height="16">
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/imglist1.jpg" alt="" width="364" height="223">
+                            <div class="img-content">
+                                <span>双凤纪念园</span>
+                                <span class="jiaColor">￥0.98万起</span>
+                                <span>太仓
+                                    <img src="img/address.png" alt="地图" width="16" height="16">
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/imglist2.jpg" alt="" width="364" height="223">
+                            <div class="img-content">
+                                <span>长青烈士园</span>
+                                <span class="jiaColor">￥0.98万起</span>
+                                <span>太仓
+                                    <img src="img/address.png" alt="地图" width="16" height="16">
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/imglist3.jpg" alt="" width="364" height="223">
+                            <div class="img-content">
+                                <span>至尊园</span>
+                                <span class="jiaColor">￥0.98万起</span>
+                                <span>太仓
+                                    <img src="img/address.png" alt="地图" width="16" height="16">
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/imglist1.jpg" alt="" width="364" height="223">
+                            <div class="img-content">
+                                <span>双凤纪念园</span>
+                                <span class="jiaColor">￥0.98万起</span>
+                                <span>太仓
+                                    <img src="img/address.png" alt="地图" width="16" height="16">
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/imglist2.jpg" alt="" width="364" height="223">
+                            <div class="img-content">
+                                <span>长青烈士园</span>
+                                <span class="jiaColor">￥0.98万起</span>
+                                <span>太仓
+                                    <img src="img/address.png" alt="地图" width="16" height="16">
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/imglist3.jpg" alt="" width="364" height="223">
+                            <div class="img-content">
+                                <span>至尊园</span>
+                                <span class="jiaColor">￥0.98万起</span>
+                                <span>太仓
+                                    <img src="img/address.png" alt="地图" width="16" height="16">
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="imgcmore">
+                    <span>查看更多 >></span>
+                </div>
+            </div>
+        </div>
+
+        <!--售后服务-->
+        <div class="shouhou">
+            <div class="sh-top"></div>
+            <div class="sh-bottom">
+                <div class="shouhouPic">
+                    <img src="img/shouhou.png" alt="售后" width="367" height="316">
+                </div>
+                <!--流程-->
+                <div class="flow">
+                    <div class="flow-content">
+                        <ul>
+                            <li>
+                                <div class="flc-left">
+                                    <img src="img/liucheng-1.png" alt="流程1" width="60" height="60">
+                                    <div class="xuxian"></div>
+                                </div>
+                                <div class="flc-right">
+                                    <p>一、 前期接洽</p>
+                                    <p>1.洽谈----洽谈人</p>
+                                    <p>2.事项: 商讨礼仪安葬具体细节，确定落葬日期；</p>
+                                    <p>3.填写礼仪落葬洽谈记录表----接洽人员、客户、并签字；</p>
+                                    <p>4.接洽人员填写收费单、客户付款</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flc-left">
+                                    <img src="img/liucheng-2.png" alt="流程2" width="60" height="60">
+                                    <div class="xuxian"></div>
+                                </div>
+                                <div class="flc-right">
+                                    <p>二、 客户所需要准备的商品</p>
+                                    <p>1.所需人员----家属</p>
+                                    <p>2.事项: (1) 必带物品 (墓穴证书/落葬通知单/骨灰寄存证)</p>
+                                    <p>(2) 洽谈后相关自备物品 (如家祭品等)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flc-left">
+                                    <img src="img/liucheng-3.png" alt="流程3" width="60" height="60">
+                                    <div class="xuxian"></div>
+                                </div>
+                                <div class="flc-right">
+                                    <p>三、 小组会议</p>
+                                    <p>1.组长确定分工， 把工作分发到各负责人手中;</p>
+                                    <p>2.事项: 落实物品</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flc-left">
+                                    <img src="img/liucheng-4.png" alt="流程4" width="60" height="60">
+                                    <div class="xuxian"></div>
+                                </div>
+                                <div class="flc-right">
+                                    <p>四、 礼仪厅、墓区现场装饰</p>
+                                    <p>1.所需人员: 礼仪小组成员</p>
+                                    <p>2.事项: 根据套餐内容和洽谈记录表布置现场</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flc-left">
+                                    <img src="img/liucheng-5.png" alt="流程5" width="60" height="60">
+                                    <div class="xuxian"></div>
+                                </div>
+                                <div class="flc-right">
+                                    <p>五、 家属来园</p>
+                                    <p>1.所需人员: 家属、礼仪师、礼仪协助师</p>
+                                    <p>2.事项: 礼仪协助师园区门口迎候家属 (事先与家属联系)</p>
+                                    <p>3.礼仪协助师安顿家属休息 (介绍礼仪安葬程序)</p>
+                                    <p>4.礼仪协助师引领家属至室内礼仪厅现场;</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flc-left">
+                                    <img src="img/liucheng-6.png" alt="流程6" width="60" height="60">
+                                    <div class="xuxian"></div>
+                                </div>
+                                <div class="flc-right">
+                                    <p>六、 礼仪厅仪式开始</p>
+                                    <p>1.所需人员: 家属、礼仪师、礼仪协助师</p>
+                                    <p>2.室内流程: 净手--请灵--前往礼仪厅--发放鲜花--填写心愿卡--告慰一杯 烛相送--请入保护箱--护送墓区</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flc-left">
+                                    <img src="img/liucheng-7.png" alt="流程7" width="60" height="60">
+                                    <div class="xuxian"></div>
+                                </div>
+                                <div class="flc-right">
+                                    <p>七、 墓区落葬仪式开始</p>
+                                    <p>1.所需人员: 家属、礼仪师、礼仪协助师</p>
+                                    <p>2.室外流程: 告慰--揭碑--净碑--暖穴--安葬--封穴--净碑--鞠躬--告慰--献花--系心愿卡</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flc-left">
+                                    <img src="img/liucheng-7.png" alt="流程7" width="60" height="60">
+                                    <div class="xuxian no-xuxian"></div>
+                                </div>
+                                <div class="flc-right">
+                                    <p>八、 墓区落葬仪式结束</p>
+                                    <p>1.所需人员: 礼仪师致结束词，代表公司鞠躬献花退场</p>
+                                    <p>2.家属家祭</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!--墓价对比-->
+        <div class="jiageComparison">
+            <div class="jc-one"></div>
+            <div class="jc-two">
+                <div class="jt-pic">
+                    <img src="img/comparison.jpg" alt="墓价对比" width="309" height="291">
+                </div>
+
+                <div class="jt-content">
+                    <div class="jt-list">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>公墓名称</td>
+                                <td>中式传统墓</td>
+                                <td>西式艺术墓</td>
+                                <td>草坪墓</td>
+                                <td>壁葬</td>
+                                <td>花坛墓(树葬)</td>
+                                <td>艺术墓 (划地墓)</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                            <tr>
+                                <td>福寿园 (青浦) </td>
+                                <td>9.29万元起</td>
+                                <td>6.29万元起</td>
+                                <td>5.19万元起</td>
+                                <td>5.69万元起</td>
+                                <td>6.29万元起</td>
+                                <td>8.79万元起</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="jc-three"></div>
+        </div>
+
+        <!--底部-->
+        <div class="footer">
+            <p>通过本网站在线客服或致电本网站购墓的客户，可享受网上直销价格，即可在根据不同墓型在墓园标准报价的基础上享受一定的价格！</p>
+            <p>Copyright © 2016 公墓直销网 沪ICP16008858号-2</p>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+        //swiper插件
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                autoplay: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + '</span>';
+                },
+            },
+        });
+
+        // 选中
+        $("#container .imgcCirculation .imgcHeader ul li").hover(function () {
+            var _this = $(this).index();
+            $(this).find("img:first").addClass("imgactive");
+            $(this).find(".jiaColor").css("color", "#24a6e6")
+            // $(this).find("img").addClass("imgactive").prev().siblings().find("img").removeClass("imgactive");
+        }, function () {
+            $(this).find("img").removeClass("imgactive");
+            $(this).find(".jiaColor").css("color", "#f00")
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>二级页面</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /*背景*/
+        #container .bg {
+            width: 100%;
+            height: 600px;
+            background: url("img/bg.jpg") no-repeat;
+            background-size: 100% 100%;
+        }
+
+        /*整体内容*/
+        #container .allContent {
+            width: 100%;
+            height: 3800px;
+            background: #e7ebee;
+        }
+
+        #container .allContent .headerOne {
+            width: 100%;
+            height: 130px;
+            text-align: center;
+        }
+
+        #container .allContent .headerOne span {
+            height: 130px;
+            display: block;
+            color: #24a6e6;
+            font-size: 22px;
+            line-height: 130px;
+        }
+
+        #container .allContent .oneContent {
+            width: 1200px;
+            height: 832px;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        #container .allContent .oneContent .ocHeader {
+            width: 1162px;
+            height: 62px;
+            margin: 0 auto;
+            border-bottom: 1px solid #6e6e6e;
+        }
+
+        #container .allContent .oneContent .ocHeader ul {
+            width: 1162px;
+            height: 62px;
+        }
+
+        #container .allContent .oneContent .ocHeader ul li {
+            width: auto;
+            height: 62px;
+            line-height: 62px;
+            text-align: left;
+            float: left;
+            font-size: 18px;
+            margin-right: 50px;
+            cursor: pointer;
+        }
+
+        #container .allContent .oneContent .ocHeader ul li.active {
+            border-bottom: 2px solid #24a6e6;
+        }
+
+        #container .allContent .oneContent .ocContent {
+            width: 1162px;
+            height: 726px;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        #container .allContent .oneContent .ocContent ul {
+            width: 1162px;
+            height: 726px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #container .allContent .oneContent .ocContent ul li {
+            width: 276px;
+            height: 354px;
+            float: left;
+            margin-right: 19px;
+            margin-top: 9px;
+            text-align: center;
+            background: #e7ebee;
+        }
+
+        #container .allContent .oneContent .ocContent ul li img {
+
+        }
+
+        #container .allContent .oneContent .ocContent ul li p {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        #container .allContent .oneContent .ocContent ul li p:nth-child(2) {
+            font-weight: bold;
+        }
+
+        #container .allContent .oneContent .ocContent ul li p:nth-child(3) {
+            color: #ff6b00;
+        }
+
+        #container .allContent .oneContent .ocContent ul li:nth-child(4) {
+            margin-right: 0;
+        }
+
+        #container .allContent .oneContent .ocContent ul li:nth-child(8) {
+            margin-right: 0;
+        }
+
+        #container .allContent .oneContent .ocContent ul:nth-child(1) {
+            display: block;
+            background: #fff;
+        }
+
+        #container .allContent .oneContent .ocContent ul:nth-child(2) {
+            background: red;
+            display: none;
+        }
+
+        #container .allContent .oneContent .ocContent ul:nth-child(3) {
+            background: yellow;
+            display: none;
+        }
+
+        #container .allContent .oneContent .ocContent ul:nth-child(4) {
+            background: pink;
+            display: none;
+        }
+
+        #container .allContent .oneContent .ocContent ul:nth-child(5) {
+            background: deeppink;
+            display: none;
+        }
+
+        #container .allContent .oneContent .ocContent ul:nth-child(6) {
+            background: black;
+            display: none;
+        }
+        /*第二部分内容*/
+        #container .allContent .headerTwo {
+            width: 100%;
+            height: 130px;
+            text-align: center;
+        }
+
+        #container .allContent .headerTwo span {
+            height: 130px;
+            display: block;
+            color: #24a6e6;
+            font-size: 22px;
+            line-height: 130px;
+        }
+
+        #container .allContent .twoContent {
+            width: 1200px;
+            height: 505px;
+            margin: 0 auto;
+
+        }
+
+        #container .allContent .twoContent .tcContent {
+            width: 1200px;
+            height: 40px;
+            display: block;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        /*第三部分的内容*/
+        #container .allContent .headerThree {
+            width: 100%;
+            height: 130px;
+            text-align: center;
+        }
+
+        #container .allContent .headerThree span {
+            height: 130px;
+            display: block;
+            color: #24a6e6;
+            font-size: 22px;
+            line-height: 130px;
+        }
+
+        #container .allContent .threeContent {
+            width: 100%;
+            height: auto;
+        }
+
+        #container .allContent .threeContent .flow .flow-content {
+            width: 1200px;
+            height: 1430px;
+            margin: 0 auto;
+            border: 1px solid #cdd6dc;
+            background: #fff;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-left {
+            width: 96px;
+            height: 1430px;
+            float: left;
+            text-align: center;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right {
+            width: 1080px;
+            height: 1430px;
+            float: left;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul {
+            width: 1080px;
+            height: 1430px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li {
+            width: 1080px;
+            height: 178px;
+            border-bottom: 1px dotted #b2b2b2;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(1) {
+            height: 246px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(2) {
+            height: 196px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(3) {
+            height: 154px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(4) {
+            height: 152px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(5) {
+            height: 230px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(6) {
+            height: 156px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(7) {
+            height: 155px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(8) {
+            height: 140px;
+            border-bottom: none;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li p {
+            font-size: 16px;
+            color: #333333;
+            line-height: 36px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(1) p {
+            font-weight: bold;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(1) p:nth-child(1) {
+            padding-top: 50px;
+            font-size: 18px;
+
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(2) p:nth-child(4) {
+            margin-left: 56px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(2) p {
+            font-size: 16px;
+            color: #333333;
+            line-height: 36px;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(2) p:nth-child(1) {
+            padding-top: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(3) p:nth-child(1) {
+            padding-top: 24px;
+            font-weight: bold;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(4) p:nth-child(1) {
+            padding-top: 24px;
+            font-weight: bold;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(5) p:nth-child(1) {
+            padding-top: 26px;
+            font-weight: bold;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(6) p:nth-child(1) {
+            padding-top: 24px;
+            font-weight: bold;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(7) p:nth-child(1) {
+            padding-top: 22px;
+            font-weight: bold;
+        }
+
+        #container .allContent .threeContent .flow .flow-content .fc-right ul li:nth-child(8) p:nth-child(1) {
+            padding-top: 16px;
+            font-weight: bold;
+        }
+
+        /*第四部分*/
+        #container .allContent .headerFour {
+            width: 100%;
+            height: 130px;
+            clear: both;
+            text-align: center;
+        }
+
+        #container .allContent .headerFour span {
+            height: 130px;
+            display: block;
+            color: #24a6e6;
+            font-size: 22px;
+            line-height: 130px;
+        }
+
+        #container .allContent .fourContent {
+            width: 1200px;
+            height: 440px;
+            background: #fff;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #container .allContent .fourContent .fcContainer {
+            width: 1162px;
+            height: 400px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #container .allContent .fourContent .fcContainer .fcPic {
+            float: left;
+            width: 523px;
+            height: 400px;
+        }
+
+        #container .allContent .fourContent .fcContainer .fcContent {
+            width: 620px;
+            float: right;
+            font-weight: bold;
+        }
+
+        #container .allContent .fourContent .fcContainer .fcContent span {
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <!--头部-->
+    <div class="header">
+        <!--头部标题-->
+        <div class="header-content">
+            <div class="hc">
+                <div class="hc-left">
+                    <div class="hc-left-icon">
+                        <img src="../img/header-icon.jpg" alt="图标" width="88" height="96">
+                    </div>
+                    <div class="hc-left-text">
+                        <img src="../img/icon_02.jpg" alt="公墓直销网" width="213" height="99">
+                    </div>
+                </div>
+                <div class="hc-right">
+                    <span>
+                        <p><img src="../img/kefu.png" alt="客服" width="12" height="12"> 24小时服务热线</p>
+                        <p>400-888-8888</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="hn-left">
+                <img src="../img/sanheng.jpg" alt="" width="42" height="33">
+            </div>
+            <div class="hn-right">
+                <ul>
+                    <li><a href="../index.html" class="navActive">首页</a></li>
+                    <li><a href="gwlc.html">购墓流程</a></li>
+                    <li><a href="yykm.html">预约看墓</a></li>
+                    <li><a href="shfw.html">售后服务</a></li>
+                    <li><a href="#">墓价对比</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+    <div class="allContent">
+        <!--第一部分内容-->
+        <div class="headerOne">
+            <span>松隐独家销售 • 专享优惠</span>
+        </div>
+        <div class="oneContent">
+            <div class="ocHeader">
+                <ul>
+                    <li class="active">中式传统墓</li>
+                    <li>西式艺术墓</li>
+                    <li>草坪葬</li>
+                    <li>壁葬</li>
+                    <li>花坛葬(树葬)</li>
+                    <li>艺术墓(划地葬)</li>
+                </ul>
+            </div>
+            <div class="ocContent">
+                <ul class="zhongshi">
+                    <li>
+                        <img src="img/banner_01.jpg" alt="" width="277" height="275">
+                        <p>福祥区T092 前后葬</p>
+                        <p>价格:47800 元 / 双穴</p>
+                    </li>
+                    <li>
+                        <img src="img/banner_02.jpg" alt="" width="277" height="275">
+                        <p>福祥区T092 前后葬</p>
+                        <p>价格:47800 元 / 双穴</p>
+                    </li>
+                    <li>
+                        <img src="img/banner_03.jpg" alt="" width="277" height="275">
+                        <p>福祥区T092 前后葬</p>
+                        <p>价格:47800 元 / 双穴</p>
+                    </li>
+                    <li>
+                        <img src="img/banner_04.jpg" alt="" width="277" height="275">
+                        <p>福祥区T092 前后葬</p>
+                        <p>价格:47800 元 / 双穴</p>
+                    </li>
+                    <li>
+                        <img src="img/banner_01.jpg" alt="" width="277" height="275">
+                        <p>福祥区T092 前后葬</p>
+                        <p>价格:47800 元 / 双穴</p>
+                    </li>
+                    <li>
+                        <img src="img/banner_02.jpg" alt="" width="277" height="275">
+                        <p>福祥区T092 前后葬</p>
+                        <p>价格:47800 元 / 双穴</p>
+                    </li>
+                    <li>
+                        <img src="img/banner_03.jpg" alt="" width="277" height="275">
+                        <p>福祥区T092 前后葬</p>
+                        <p>价格:47800 元 / 双穴</p>
+                    </li>
+                    <li>
+                        <img src="img/banner_04.jpg" alt="" width="277" height="275">
+                        <p>福祥区T092 前后葬</p>
+                        <p>价格:47800 元 / 双穴</p>
+                    </li>
+                </ul>
+                <ul class="xishi"></ul>
+                <ul class="caoping"></ul>
+                <ul class="bizang"></ul>
+                <ul class="huatan"></ul>
+                <ul class="yishu"></ul>
+            </div>
+        </div>
+
+        <!--第二部分的内容-->
+        <div class="headerTwo">
+            <span>园区景观</span>
+        </div>
+        <div class="twoContent">
+            <div class="tcPic">
+                <img src="img/bg.jpg" alt="" width="1200" height="464">
+            </div>
+            <div class="tcContent">
+                <span>松 隐 祥 寺</span>
+            </div>
+        </div>
+
+        <!--第三部分内容-->
+        <div class="headerThree">
+            <span>售后服务</span>
+        </div>
+        <div class="threeContent">
+            <!--流程-->
+            <div class="flow">
+                <div class="flow-content">
+                    <div class="fc-left">
+                        <img src="../img/liucheng.jpg" alt="" width="96" height="1428">
+                    </div>
+                    <div class="fc-right">
+                        <ul>
+                            <li>
+                                <p>一、 前期接洽</p>
+                                <p>1.洽谈----洽谈人</p>
+                                <p>2.事项: 商讨礼仪安葬具体细节，确定落葬日期；</p>
+                                <p>3.填写礼仪落葬洽谈记录表----接洽人员、客户、并签字；</p>
+                                <p>4.接洽人员填写收费单、客户付款</p>
+                            </li>
+                            <li>
+                                <p>二、 客户所需要准备的商品</p>
+                                <p>1.所需人员----家属</p>
+                                <p>2.事项: (1) 必带物品 (墓穴证书/落葬通知单/骨灰寄存证)</p>
+                                <p>(2) 洽谈后相关自备物品 (如家祭品等)</p>
+                            </li>
+                            <li>
+                                <p>三、 小组会议</p>
+                                <p>1.组长确定分工， 把工作分发到各负责人手中;</p>
+                                <p>2.事项: 落实物品</p>
+                            </li>
+                            <li>
+                                <p>四、 礼仪厅、墓区现场装饰</p>
+                                <p>1.所需人员: 礼仪小组成员</p>
+                                <p>2.事项: 根据套餐内容和洽谈记录表布置现场</p>
+                            </li>
+                            <li>
+                                <p>五、 家属来园</p>
+                                <p>1.所需人员: 家属、礼仪师、礼仪协助师</p>
+                                <p>2.事项: 礼仪协助师园区门口迎候家属 (事先与家属联系)</p>
+                                <p>3.礼仪协助师安顿家属休息 (介绍礼仪安葬程序)</p>
+                                <p>4.礼仪协助师引领家属至室内礼仪厅现场;</p>
+                            </li>
+                            <li>
+                                <p>六、 礼仪厅仪式开始</p>
+                                <p>1.所需人员: 家属、礼仪师、礼仪协助师</p>
+                                <p>2.室内流程: 净手--请灵--前往礼仪厅--发放鲜花--填写心愿卡--告慰一杯 烛相送--请入保护箱--护送墓区</p>
+                            </li>
+                            <li>
+                                <p>七、 墓区落葬仪式开始</p>
+                                <p>1.所需人员: 家属、礼仪师、礼仪协助师</p>
+                                <p>2.室外流程: 告慰--揭碑--净碑--暖穴--安葬--封穴--净碑--鞠躬--告慰--献花--系心愿卡</p>
+                            </li>
+                            <li>
+                                <p>八、 墓区落葬仪式结束</p>
+                                <p>1.所需人员: 礼仪师致结束词，代表公司鞠躬献花退场</p>
+                                <p>2.家属家祭</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--第四部分-->
+        <div class="headerFour">
+            <span>售后服务</span>
+        </div>
+        <div class="fourContent">
+            <div class="fcContainer">
+                <div class="fcPic">
+                    <img src="img/bg3.jpg" alt="" width="523" height="399">
+                </div>
+                <div class="fcContent">
+                        <span>
+                            上海松隐山庄陵园有限公司是一座集绿色、生态、旅游、休闲于一体的人文纪念园。自2005年发展至今陆续被评为“上海市花园单位”、“上海市一级公墓”、“上海市文明单位”。园区位于“中国长寿之乡”崇明岛中部，毗邻草港公路，公交“南堡支线”直达园区，地理位置得天独厚，交通便利。园区占地700余亩，辟有园林休闲区、办公接待服务区、安葬祭祀区以及石料加工区。步入园区，宏伟的仿古牌楼映入眼帘，肃穆的神道、亭桥楼阁、小桥流水、池中莲花、假山飞瀑、广场喷泉、以及形态各异的景观小品应接不暇。园内树木林立、花草遍野，尽显人、自然、建筑的和谐与宁静。墓园朝可迎长江晨曦，夜能伴树影婆娑，从每一丝自由的风里，仿佛都能抓住那流逝的年华；从每一捧清新的泥土里，仿佛都能触摸到那芳香的生命；让生命得以升华，让生命在天堂的圣殿里永存。自2005年开园以来，先后推出了玉兰苑、常生苑、棕榈苑、雅兰苑、爱莲苑等特色区域，园内墓型齐全、葬式多样，能够满足不同层次的客户需求，供广大市民选择。同时，瀛新团队秉持“想客户所想、满足客户所需、超越客户期望”的服务理念，以继承传统殡葬文化、打造城市绿肺为使命，使其成为与国际大都市相匹配的一张亮丽名片，最终成为世界一流的生态人文纪念公园。
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="footer">
+        <p>通过本网站在线客服或致电本网站购墓的客户，可享受网上直销价格，即可在根据不同墓型在墓园标准报价的基础上享受一定的价格！</p>
+        <p>Copyright © 2016 公墓直销网 沪ICP16008858号-2</p>
+    </div>
+</div>
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        $("#container .allContent .oneContent .ocHeader ul li").hover(function () {
+            var _this = $(this).index();
+            $(this).addClass("active").siblings().removeClass();
+            $("#container .allContent .oneContent .ocContent ul").eq(_this).show().siblings().hide();
+        })
+    })
+</script>
+</body>
+</html>

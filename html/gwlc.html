@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物流程</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /*内容*/
+        #container .content {
+            width: 100%;
+            min-height: 1500px;
+            background: #e7ebee;
+        }
+
+        #container .content .contentList {
+            width: 1200px;
+            min-height: 1500px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .cl-liucheng {
+            width: 1200px;
+            height: 215px;
+            position: relative;
+        }
+
+        #container .content .contentList .cl-liucheng .cll-content {
+            width: 594px;
+            height: 110px;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            margin-left: -297px;
+            border-radius: 50px;
+            border: 2px solid #bdbdbd;
+            background: #e7ebee;
+        }
+
+        #container .content .contentList .cl-liucheng .cll-content span {
+            width: 570px;
+            height: 89px;
+            background: #fff;
+            margin: auto;
+            display: block;
+            border-radius: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            padding: 0;
+        }
+
+        #container .content .contentList .cl-liucheng .cll-content span p:nth-child(1) {
+            font-size: 40px;
+            color: #24a6e6;
+            font-weight: bold;
+        }
+
+        #container .content .contentList .cl-liucheng .cll-content span p:nth-child(2) {
+            font-size: 14px;
+            color: #d9d9d9;
+        }
+
+        /*1，准备相关证件*/
+        #container .content .contentList .contentone {
+            width: 1200px;
+            height: 208px;
+        }
+
+        #container .content .contentList .contentone .ct-content {
+            width: 594px;
+            height: 208px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentone .ct-content .ctc-left {
+            width: 50%;
+            height: 208px;
+            float: left;
+        }
+
+        #container .content .contentList .contentone .ct-content .ctc-right {
+            width: 50%;
+            height: 208px;
+            float: right;
+            border-left: 2px solid #bdbdbd;
+        }
+
+        #container .content .contentList .contentone .ct-content .ctc-prepare {
+            width: 300px;
+            height: 208px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentone .ct-content .ctc-prepare .ctcp-point {
+            width: 300px;
+            height: 104px;
+            position: relative;
+        }
+
+        #container .content .contentList .contentone .ct-content .ctc-prepare .ctcp-point span {
+            width: 15px;
+            height: 15px;
+            background: #24a6e6;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        #container .content .contentList .contentone .ct-content .ctc-prepare .ctcp-content {
+            width: 300px;
+            height: 104px;
+            position: relative;
+        }
+
+        #container .content .contentList .contentone .ct-content .ctc-prepare .ctcp-content span {
+            width: 300px;
+            height: 66px;
+            display: block;
+            background: #24a6e6;
+            border-radius: 50px;
+            text-align: center;
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            line-height: 66px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /*第一部分内容介绍*/
+        #container .content .contentList .oneInfo {
+            width: 1200px;
+            height: 354px;
+            position: relative;
+        }
+
+        #container .content .contentList .oneInfo .oneInfoLeft {
+            width: 50%;
+            height: 354px;
+            float: left;
+        }
+
+        #container .content .contentList .oneInfo .oneInfoRight {
+            width: 50%;
+            height: 354px;
+            float: right;
+            border: 2px solid #bdbdbd;
+            border-left: none;
+        }
+
+        #container .content .contentList .oneInfo .oneintroduce {
+            width: 1188px;
+            height: 326px;
+            background: #fafafa;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #container .content .contentList .oneInfo .oneintroduce ul {
+            width: 1142px;
+            height: 326px;
+            padding-left: 42px;
+        }
+
+        #container .content .contentList .oneInfo .oneintroduce ul li {
+            width: 1142px;
+            height: auto;
+            list-style-type: disc;
+            color: #24a6e6;
+            padding-top: 58px;
+            font-size: 20px;
+        }
+
+        /*2.选择墓穴*/
+        #container .content .contentList .contentwo {
+            width: 1200px;
+            height: 214px;
+        }
+
+        #container .content .contentList .contentwo .ct-left {
+            width: 50%;
+            height: 214px;
+            float: left;
+            border-right: 2px solid #bdbdbd;
+            margin-top: -2px;
+        }
+
+        #container .content .contentList .contentwo .ct-right {
+            width: 50%;
+            height: 214px;
+            float: right;
+            margin-top: -2px;
+        }
+
+        #container .content .contentList .contentwo .ct-content {
+            width: 300px;
+            height: 214px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentwo .ct-content .ctc-top {
+            width: 100%;
+            height: 50%;
+            position: relative;
+        }
+
+        #container .content .contentList .contentwo .ct-content .ctc-top span:nth-child(1){
+            width: 15px;
+            height: 15px;
+            background: #24a6e6;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: -6px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #container .content .contentList .contentwo .ct-content .ctc-top span:nth-child(2){
+            width: 15px;
+            height: 15px;
+            border: 1px solid #b7b7b7;
+            background: #e7ebee;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #container .content .contentList .contentwo .ct-content .ctc-bottom {
+            width: 100%;
+            height: 50%;
+            position: relative;
+        }
+
+        #container .content .contentList .contentwo .ct-content .ctc-bottom span{
+            width: 100%;
+            height: 66px;
+            display: block;
+            background: #24a6e6;
+            border-radius: 50px;
+            text-align: center;
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            line-height: 66px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #container .content .contentList .twoInfo{
+            width: 1200px;
+            height: 350px;
+            margin: -2px auto 0;
+            position: relative;
+        }
+
+        #container .content .contentList .twoInfo .twoInfoLeft{
+            width: 50%;
+            height: 354px;
+            float: left;
+            border: 2px solid #bdbdbd;
+            border-right: none;
+        }
+
+        #container .content .contentList .twoInfo .twoInfoRight{
+            width: 50%;
+            height: 354px;
+            float: right;
+        }
+
+        #container .content .contentList .twoInfo .twointroduce{
+            width: 1180px;
+            height: 320px;
+            background: #24a6e6;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #container .content .contentList .twoInfo .twointroduce ul {
+            width: 1142px;
+            height: 326px;
+            padding-left: 42px;
+        }
+
+        #container .content .contentList .twoInfo .twointroduce ul li {
+            width: 1142px;
+            height: auto;
+            list-style-type: disc;
+            color: #fff;
+            padding-top: 34px;
+            font-size: 20px;
+        }
+
+
+        /*3.交付全款或定金*/
+        #container .content .contentList .contentthree {
+            width: 1200px;
+            height: 208px;
+        }
+
+        #container .content .contentList .contentthree .ct-content {
+            width: 594px;
+            height: 208px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentthree .ct-content .ctc-left {
+            width: 50%;
+            height: 208px;
+            float: left;
+        }
+
+        #container .content .contentList .contentthree .ct-content .ctc-right {
+            width: 50%;
+            height: 208px;
+            float: right;
+            border-left: 2px solid #bdbdbd;
+        }
+
+        #container .content .contentList .contentthree .ct-content .ctc-prepare {
+            width: 300px;
+            height: 208px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentthree .ct-content .ctc-prepare .ctcp-point {
+            width: 300px;
+            height: 104px;
+            position: relative;
+        }
+
+        #container .content .contentList .contentthree .ct-content .ctc-prepare .ctcp-point span {
+            width: 15px;
+            height: 15px;
+            background: #24a6e6;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        #container .content .contentList .contentthree .ct-content .ctc-prepare .ctcp-content {
+            width: 300px;
+            height: 104px;
+            position: relative;
+        }
+
+        #container .content .contentList .contentthree .ct-content .ctc-prepare .ctcp-content span {
+            width: 300px;
+            height: 66px;
+            display: block;
+            background: #24a6e6;
+            border-radius: 50px;
+            text-align: center;
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            line-height: 66px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /*第三部分内容介绍*/
+        #container .content .contentList .threeInfo {
+            width: 1200px;
+            height: 354px;
+            position: relative;
+        }
+
+        #container .content .contentList .threeInfo .oneInfoLeft {
+            width: 50%;
+            height: 354px;
+            float: left;
+        }
+
+        #container .content .contentList .threeInfo .oneInfoRight {
+            width: 50%;
+            height: 354px;
+            float: right;
+            border: 2px solid #bdbdbd;
+            border-left: none;
+        }
+
+        #container .content .contentList .threeInfo .oneintroduce {
+            width: 1188px;
+            height: 326px;
+            background: #fafafa;
+            position: absolute;
+            margin: auto;
+            top: 8px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #container .content .contentList .threeInfo .oneintroduce ul {
+            width: 1142px;
+            height: 326px;
+            padding-left: 42px;
+        }
+
+        #container .content .contentList .threeInfo .oneintroduce ul li {
+            width: 1142px;
+            height: auto;
+            list-style-type: disc;
+            color: #24a6e6;
+            padding-top: 30px;
+            font-size: 20px;
+        }
+
+
+        /*4.预付期内付清全款*/
+        #container .content .contentList .contenfour {
+            width: 1200px;
+            height: 214px;
+        }
+
+        #container .content .contentList .contenfour .ct-left {
+            width: 50%;
+            height: 214px;
+            float: left;
+            border-right: 2px solid #bdbdbd;
+            margin-top: -2px;
+        }
+
+        #container .content .contentList .contenfour .ct-right {
+            width: 50%;
+            height: 214px;
+            float: right;
+            margin-top: -2px;
+        }
+
+        #container .content .contentList .contenfour .ct-content {
+            width: 300px;
+            height: 214px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contenfour .ct-content .ctc-top {
+            width: 100%;
+            height: 50%;
+            position: relative;
+        }
+
+        #container .content .contentList .contenfour .ct-content .ctc-top span:nth-child(1){
+            width: 15px;
+            height: 15px;
+            background: #24a6e6;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: -6px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #container .content .contentList .contenfour .ct-content .ctc-top span:nth-child(2){
+            width: 15px;
+            height: 15px;
+            border: 1px solid #b7b7b7;
+            background: #e7ebee;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #container .content .contentList .contenfour .ct-content .ctc-bottom {
+            width: 100%;
+            height: 50%;
+            position: relative;
+        }
+
+        #container .content .contentList .contenfour .ct-content .ctc-bottom span{
+            width: 100%;
+            height: 66px;
+            display: block;
+            background: #24a6e6;
+            border-radius: 50px;
+            text-align: center;
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            line-height: 66px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #container .content .contentList .fourInfo{
+            width: 1200px;
+            height: 350px;
+            margin: -2px auto 0;
+            position: relative;
+        }
+
+        #container .content .contentList .fourInfo .twoInfoLeft{
+            width: 50%;
+            height: 354px;
+            float: left;
+            border: 2px solid #bdbdbd;
+            border-right: none;
+        }
+
+        #container .content .contentList .fourInfo .twoInfoRight{
+            width: 50%;
+            height: 354px;
+            float: right;
+        }
+
+        #container .content .contentList .fourInfo .twointroduce{
+            width: 1180px;
+            height: 320px;
+            background: #24a6e6;
+            position: absolute;
+            margin: auto;
+            top: 12px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #container .content .contentList .fourInfo .twointroduce ul {
+            width: 1142px;
+            height: 326px;
+            padding-left: 42px;
+        }
+
+        #container .content .contentList .fourInfo .twointroduce ul li {
+            width: 1142px;
+            height: auto;
+            list-style-type: disc;
+            color: #fff;
+            padding-top: 58px;
+            font-size: 20px;
+        }
+
+        /* 5.制作碑文小样*/
+        #container .content .contentList .contentfive {
+            width: 1200px;
+            height: 208px;
+        }
+
+        #container .content .contentList .contentfive .ct-content {
+            width: 594px;
+            height: 208px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentfive .ct-content .ctc-left {
+            width: 50%;
+            height: 208px;
+            float: left;
+        }
+
+        #container .content .contentList .contentfive .ct-content .ctc-right {
+            width: 50%;
+            height: 208px;
+            float: right;
+            border-left: 2px solid #bdbdbd;
+        }
+
+        #container .content .contentList .contentfive .ct-content .ctc-prepare {
+            width: 300px;
+            height: 208px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentfive .ct-content .ctc-prepare .ctcp-point {
+            width: 300px;
+            height: 104px;
+            position: relative;
+        }
+
+        #container .content .contentList .contentfive .ct-content .ctc-prepare .ctcp-point span {
+            width: 15px;
+            height: 15px;
+            background: #24a6e6;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        #container .content .contentList .contentfive .ct-content .ctc-prepare .ctcp-content {
+            width: 300px;
+            height: 104px;
+            position: relative;
+        }
+
+        #container .content .contentList .contentfive .ct-content .ctc-prepare .ctcp-content span {
+            width: 300px;
+            height: 66px;
+            display: block;
+            background: #24a6e6;
+            border-radius: 50px;
+            text-align: center;
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            line-height: 66px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /*第五部分内容介绍*/
+        #container .content .contentList .fiveInfo {
+            width: 1200px;
+            height: 354px;
+            position: relative;
+        }
+
+        #container .content .contentList .fiveInfo .oneInfoLeft {
+            width: 50%;
+            height: 354px;
+            float: left;
+        }
+
+        #container .content .contentList .fiveInfo .oneInfoRight {
+            width: 50%;
+            height: 354px;
+            float: right;
+            border: 2px solid #bdbdbd;
+            border-left: none;
+        }
+
+        #container .content .contentList .fiveInfo .oneintroduce {
+            width: 1188px;
+            height: 314px;
+            background: #fafafa;
+            position: absolute;
+            margin: auto;
+            top: 15px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #container .content .contentList .fiveInfo .oneintroduce ul {
+            width: 1142px;
+            height: 326px;
+            padding-left: 42px;
+        }
+
+        #container .content .contentList .fiveInfo .oneintroduce ul li {
+            width: 1142px;
+            height: auto;
+            list-style-type: disc;
+            color: #24a6e6;
+            padding-top: 58px;
+            font-size: 20px;
+        }
+
+        /*6.确定安放时间及礼仪*/
+        #container .content .contentList .contentsix {
+            width: 1200px;
+            height: 214px;
+        }
+
+        #container .content .contentList .contentsix .ct-left {
+            width: 50%;
+            height: 214px;
+            float: left;
+            border-right: 2px solid #bdbdbd;
+            margin-top: -2px;
+        }
+
+        #container .content .contentList .contentsix .ct-right {
+            width: 50%;
+            height: 214px;
+            float: right;
+            margin-top: -2px;
+        }
+
+        #container .content .contentList .contentsix .ct-content {
+            width: 300px;
+            height: 214px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentsix .ct-content .ctc-top {
+            width: 100%;
+            height: 50%;
+            position: relative;
+        }
+
+        #container .content .contentList .contentsix .ct-content .ctc-top span:nth-child(1){
+            width: 15px;
+            height: 15px;
+            background: #24a6e6;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #container .content .contentList .contentsix .ct-content .ctc-top span:nth-child(2){
+            width: 15px;
+            height: 15px;
+            border: 1px solid #b7b7b7;
+            background: #e7ebee;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #container .content .contentList .contentsix .ct-content .ctc-bottom {
+            width: 100%;
+            height: 50%;
+            position: relative;
+        }
+
+        #container .content .contentList .contentsix .ct-content .ctc-bottom span{
+            width: 100%;
+            height: 66px;
+            display: block;
+            background: #24a6e6;
+            border-radius: 50px;
+            text-align: center;
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            line-height: 66px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        #container .content .contentList .sixInfo{
+            width: 1200px;
+            height: 350px;
+            margin: -2px auto 0;
+            position: relative;
+        }
+
+        #container .content .contentList .sixInfo .twoInfoLeft{
+            width: 50%;
+            height: 354px;
+            float: left;
+            border: 2px solid #bdbdbd;
+            border-right: none;
+        }
+
+        #container .content .contentList .sixInfo .twoInfoRight{
+            width: 50%;
+            height: 354px;
+            float: right;
+        }
+
+        #container .content .contentList .sixInfo .twointroduce{
+            width: 1180px;
+            height: 320px;
+            background: #24a6e6;
+            position: absolute;
+            margin: auto;
+            top: 20px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #container .content .contentList .sixInfo .twointroduce ul {
+            width: 1142px;
+            height: 326px;
+            padding-left: 42px;
+        }
+
+        #container .content .contentList .sixInfo .twointroduce ul li {
+            width: 1142px;
+            height: auto;
+            list-style-type: disc;
+            color: #fff;
+            padding-top: 58px;
+            font-size: 20px;
+        }
+
+        /* 7.选择配套附属商品*/
+        #container .content .contentList .contentseven {
+            width: 1200px;
+            height: 208px;
+        }
+
+        #container .content .contentList .contentseven .ct-content {
+            width: 594px;
+            height: 208px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentseven .ct-content .ctc-left {
+            width: 50%;
+            height: 208px;
+            float: left;
+        }
+
+        #container .content .contentList .contentseven .ct-content .ctc-right {
+            width: 50%;
+            height: 208px;
+            float: right;
+            border-left: 2px solid #bdbdbd;
+        }
+
+        #container .content .contentList .contentseven .ct-content .ctc-prepare {
+            width: 300px;
+            height: 208px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentseven .ct-content .ctc-prepare .ctcp-point {
+            width: 300px;
+            height: 104px;
+            position: relative;
+        }
+
+        #container .content .contentList .contentseven .ct-content .ctc-prepare .ctcp-point span {
+            width: 15px;
+            height: 15px;
+            background: #24a6e6;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        #container .content .contentList .contentseven .ct-content .ctc-prepare .ctcp-content {
+            width: 300px;
+            height: 104px;
+            position: relative;
+        }
+
+        #container .content .contentList .contentseven .ct-content .ctc-prepare .ctcp-content span {
+            width: 300px;
+            height: 66px;
+            display: block;
+            background: #24a6e6;
+            border-radius: 50px;
+            text-align: center;
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            line-height: 66px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /*第七部分内容介绍*/
+        #container .content .contentList .sevenInfo {
+            width: 1200px;
+            height: 354px;
+            position: relative;
+        }
+
+        #container .content .contentList .sevenInfo .oneInfoLeft {
+            width: 50%;
+            height: 354px;
+            float: left;
+        }
+
+        #container .content .contentList .sevenInfo .oneInfoRight {
+            width: 50%;
+            height: 354px;
+            float: right;
+            border: 2px solid #bdbdbd;
+            border-left: none;
+        }
+
+        #container .content .contentList .sevenInfo .oneintroduce {
+            width: 1188px;
+            height: 314px;
+            background: #fafafa;
+            position: absolute;
+            margin: auto;
+            top: 24px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #container .content .contentList .sevenInfo .oneintroduce ul {
+            width: 1142px;
+            height: 326px;
+            padding-left: 42px;
+        }
+
+        #container .content .contentList .sevenInfo .oneintroduce ul li {
+            width: 1142px;
+            height: auto;
+            list-style-type: disc;
+            color: #24a6e6;
+            padding-top: 14px;
+            font-size: 20px;
+        }
+
+
+        /* 9.选择配套附属商品*/
+        #container .content .contentList .contentnine {
+            width: 1200px;
+            height: 208px;
+        }
+
+        #container .content .contentList .contentnine .ct-content {
+            width: 594px;
+            height: 208px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentnine .ct-content .ctc-left {
+            width: 50%;
+            height: 208px;
+            float: left;
+        }
+
+        #container .content .contentList .contentnine .ct-content .ctc-right {
+            width: 50%;
+            height: 208px;
+            float: right;
+            border-left: 2px solid #bdbdbd;
+        }
+
+        #container .content .contentList .contentnine .ct-content .ctc-prepare {
+            width: 300px;
+            height: 208px;
+            margin: 0 auto;
+        }
+
+        #container .content .contentList .contentnine .ct-content .ctc-prepare .ctcp-point {
+            width: 300px;
+            height: 104px;
+            position: relative;
+        }
+
+        #container .content .contentList .contentnine .ct-content .ctc-prepare .ctcp-point span {
+            width: 15px;
+            height: 15px;
+            background: #24a6e6;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        #container .content .contentList .contentnine .ct-content .ctc-prepare .ctcp-content {
+            width: 300px;
+            height: 104px;
+            position: relative;
+        }
+
+        #container .content .contentList .contentnine .ct-content .ctc-prepare .ctcp-content span {
+            width: 300px;
+            height: 66px;
+            display: block;
+            background: #24a6e6;
+            border-radius: 50px;
+            text-align: center;
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            line-height: 66px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /*第九部分内容介绍*/
+        #container .content .contentList .nineInfo {
+            width: 1200px;
+            height: 354px;
+            position: relative;
+        }
+
+        #container .content .contentList .nineInfo .oneInfoLeft {
+            width: 50%;
+            height: 338px;
+            float: left;
+        }
+
+        #container .content .contentList .nineInfo .oneInfoRight {
+            width: 50%;
+            height: 338px;
+            float: right;
+            border: 2px solid #bdbdbd;
+            border-left: none;
+        }
+
+        #container .content .contentList .nineInfo .oneintroduce {
+            width: 1188px;
+            height: 314px;
+            background: #fafafa;
+            position: absolute;
+            margin: auto;
+            top: 16px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #container .content .contentList .nineInfo .oneintroduce ul {
+            width: 1142px;
+            height: 326px;
+            padding-left: 42px;
+        }
+
+        #container .content .contentList .nineInfo .oneintroduce ul li {
+            width: 1142px;
+            height: auto;
+            list-style-type: disc;
+            color: #24a6e6;
+            padding-top: 14px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <!--头部-->
+    <div class="header">
+        <!--头部标题-->
+        <div class="header-content">
+            <div class="hc">
+                <div class="hc-left">
+                    <div class="hc-left-icon">
+                        <img src="../img/header-icon.jpg" alt="图标" width="88" height="96">
+                    </div>
+                    <div class="hc-left-text">
+                        <img src="../img/icon_02.jpg" alt="公墓直销网" width="213" height="99">
+                    </div>
+                </div>
+                <div class="hc-right">
+                <span>
+                    <p><img src="../img/kefu.png" alt="客服" width="12" height="12"> 24小时服务热线</p>
+                    <p>400-888-8888</p>
+                </span>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="hn-left">
+                <img src="../img/sanheng.jpg" alt="" width="42" height="33">
+            </div>
+            <div class="hn-right">
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a class="navActive" href="#">购墓流程</a></li>
+                    <li><a href="yykm.html">预约看墓</a></li>
+                    <li><a href="shfw.html">售后服务</a></li>
+                    <li><a href="#">墓价对比</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--内容-->
+    <div class="content">
+        <div class="contentList">
+            <!--流程-->
+            <div class="cl-liucheng">
+                <div class="cll-content">
+                        <span>
+                            <p>墓地选购流程</p>
+                            <p>Graveyard purchase process</p>
+                        </span>
+                </div>
+            </div>
+            <!--1.准备相关证件-->
+            <div class="contentone">
+                <div class="ct-content">
+                    <div class="ctc-left"></div>
+                    <div class="ctc-right"></div>
+                    <div class="ctc-prepare">
+                        <div class="ctcp-point">
+                            <span></span>
+                        </div>
+                        <div class="ctcp-content">
+                                <span>
+                                    <p>1.准备相关证件</p>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="oneInfo">
+                <div class="oneInfoLeft"></div>
+                <div class="oneInfoRight"></div>
+                <div class="oneintroduce">
+                    <ul>
+                        <li>购墓时请携带墓人本人身份证及逝者相关证件到业务厅由专业的业务接待员带您选购墓穴</li>
+                        <li>如果是第一次实地勘察墓地，携带本人身份证即可，带些须现金或者银行卡，可以为看上的墓穴交纳定金</li>
+                        <li>安葬时需要本人身份证，和老人的死亡证明或者火化证明或者骨灰寄存证明，现金和银行卡均可</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--2.选择墓穴-->
+            <div class="contentwo">
+                <div class="ct-left"></div>
+                <div class="ct-right"></div>
+                <div class="ct-content">
+                    <div class="ctc-top">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="ctc-bottom">
+                         <span>
+                            <p>2.选择墓穴</p>
+                         </span>
+                    </div>
+                </div>
+            </div>
+            <div class="twoInfo">
+                <div class="twoInfoLeft"></div>
+                <div class="twoInfoRight"></div>
+                <div class="twointroduce">
+                    <ul>
+                        <li>在购墓顾问人员额陪同下，实地勘察墓区，选择合适的墓形，墓址 (几区几排几号) 、 确定价格。</li>
+                        <li>客户在确定墓址后，请到业务厅，填写有关详细资料。</li>
+                        <li>预订人交纳墓价款额10%左右作为定金 (或100，1000元不等) 十五日内 (子自定金交付起，可协商) 补齐全款；逾期不交全款，墓位不予保留。</li>
+                        <li>不交定金，陵园不保留墓位。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--3.交付全款或定金-->
+            <div class="contentthree">
+                <div class="ct-content">
+                    <div class="ctc-left"></div>
+                    <div class="ctc-right"></div>
+                    <div class="ctc-prepare">
+                        <div class="ctcp-point">
+                            <span></span>
+                        </div>
+                        <div class="ctcp-content">
+                                <span>
+                                    <p>3.交付全款或定金</p>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="threeInfo">
+                <div class="oneInfoLeft"></div>
+                <div class="oneInfoRight"></div>
+                <div class="oneintroduce">
+                    <ul>
+                        <li>交付全款或定金</li>
+                        <li>客户在填写表格后，支付墓穴定金，余款按协商期限内付清</li>
+                        <li>选定墓穴后，预定人须至少交纳墓价款的10%或者100元作为定金，协商日期内 (自定金交付日起) 交齐全款；逾期不交全款，墓位不予保留，定金退还。</li>
+                        <li>不交定金，园区不保留墓位，因为每天看墓的家属比较多，如果没有定金预留，其他家属如果看上这个墓位，并且交纳全款或定金那墓位就被其他家属选购了。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--4.预付期内付清全款-->
+            <div class="contenfour">
+                <div class="ct-left"></div>
+                <div class="ct-right"></div>
+                <div class="ct-content">
+                    <div class="ctc-top">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="ctc-bottom">
+                         <span>
+                            <p>4.预付期内付清全款</p>
+                         </span>
+                    </div>
+                </div>
+            </div>
+            <div class="fourInfo">
+                <div class="twoInfoLeft"></div>
+                <div class="twoInfoRight"></div>
+                <div class="twointroduce">
+                    <ul>
+                        <li>预付期内付清全款。</li>
+                        <li>选定墓穴后，预定人须交纳10%作为定金，十五日内 (自定金交付日起) 交齐全款；逾期不交全款，墓位不予保留。</li>
+                        <li>客户在付清墓穴款后，陵园颁发墓穴证。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--5.制作碑文小样-->
+            <div class="contentfive">
+                <div class="ct-content">
+                    <div class="ctc-left"></div>
+                    <div class="ctc-right"></div>
+                    <div class="ctc-prepare">
+                        <div class="ctcp-point">
+                            <span></span>
+                        </div>
+                        <div class="ctcp-content">
+                                <span>
+                                    <p>5.制作碑文小样</p>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fiveInfo">
+                <div class="oneInfoLeft"></div>
+                <div class="oneInfoRight"></div>
+                <div class="oneintroduce">
+                    <ul>
+                        <li>制作碑文小样</li>
+                        <li>选定墓穴后，预定人须至少交纳墓价款的10%或者100元作为定金，十五日内 (自定金交付日起) 交齐全款；逾期不交全款，墓位不予保留。</li>
+                        <li>注意: 填写碑文登记表，填写时应字迹清楚，正楷，以防出现疏漏和错误。</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--6.确定安放时间和礼仪-->
+            <div class="contentsix">
+                <div class="ct-left"></div>
+                <div class="ct-right"></div>
+                <div class="ct-content">
+                    <div class="ctc-top">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="ctc-bottom">
+                         <span>
+                            <p>6.预付期内付清全款</p>
+                         </span>
+                    </div>
+                </div>
+            </div>
+            <div class="sixInfo">
+                <div class="twoInfoLeft"></div>
+                <div class="twoInfoRight"></div>
+                <div class="twointroduce">
+                    <ul>
+                        <li>确定安放时间和礼仪。</li>
+                        <li>客户确定亲人安葬具体日期后，选择对应的安葬仪式，服务，确认安葬流程，请通知陵园，由陵园派专人做好各项安葬事宜如有变动请及时提前通知陵园。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--7.制作碑文小样-->
+            <div class="contentseven">
+                <div class="ct-content">
+                    <div class="ctc-left"></div>
+                    <div class="ctc-right"></div>
+                    <div class="ctc-prepare">
+                        <div class="ctcp-point">
+                            <span></span>
+                        </div>
+                        <div class="ctcp-content">
+                                <span>
+                                    <p>7.选择配套附属商品</p>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sevenInfo">
+                <div class="oneInfoLeft"></div>
+                <div class="oneInfoRight"></div>
+                <div class="oneintroduce">
+                    <ul>
+                        <li>选择配套附属商品。</li>
+                        <li>配套附属商品一般包括：骨灰盒，防潮盒，馆床，守灵狮，香炉，相框，守灵牛，守灵象，麒麟，水晶七件套等墓地摆件。可
+                            根据需要购买</li>
+                        <li>般情况下，墓穴前面供台上，摆放香炉，在传统习俗中，香炉是咱们祭祀先人时焚香用的，园区都有专门的烧纸焚香的地方，
+                            一般不建议在墓穴前面烧香，怕因火苗引起不可预料的事情发生，如果需要烧香，可以在香焚烧完之后在离开。</li>
+                        <li>守灵狮：一对狮子，一般20-25公分高，材质汉白玉，黄米玉，因狮子在我们的传统观念里是镇宅，辟邪，可以增加家人正气，
+                            官威。</li>
+                        <li>防潮盒：用来包骨灰盒的，起到防潮的作用，保存骨灰盒完整不腐烂，树脂材质的，可防10-15年左右。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--8-->
+            <div class="contentsix">
+                <div class="ct-left"></div>
+                <div class="ct-right"></div>
+                <div class="ct-content">
+                    <div class="ctc-top">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="ctc-bottom">
+                         <span>
+                            <p>8.暂时不知道</p>
+                         </span>
+                    </div>
+                </div>
+            </div>
+            <div class="sixInfo">
+                <div class="twoInfoLeft"></div>
+                <div class="twoInfoRight"></div>
+                <div class="twointroduce">
+                    <ul>
+                        <li>确定安放时间和礼仪。</li>
+                        <li>客户确定亲人安葬具体日期后，选择对应的安葬仪式，服务，确认安葬流程，请通知陵园，由陵园派专人做好各项安葬事宜如有变动请及时提前通知陵园。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--9-->
+            <div class="contentnine">
+                <div class="ct-content">
+                    <div class="ctc-left"></div>
+                    <div class="ctc-right"></div>
+                    <div class="ctc-prepare">
+                        <div class="ctcp-point">
+                            <span></span>
+                        </div>
+                        <div class="ctcp-content">
+                                <span>
+                                    <p>9.暂时不知道</p>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nineInfo">
+                <div class="oneInfoLeft"></div>
+                <div class="oneInfoRight"></div>
+                <div class="oneintroduce">
+                    <ul>
+                        <li>选择配套附属商品。</li>
+                        <li>配套附属商品一般包括：骨灰盒，防潮盒，馆床，守灵狮，香炉，相框，守灵牛，守灵象，麒麟，水晶七件套等墓地摆件。可
+                            根据需要购买</li>
+                        <li>般情况下，墓穴前面供台上，摆放香炉，在传统习俗中，香炉是咱们祭祀先人时焚香用的，园区都有专门的烧纸焚香的地方，
+                            一般不建议在墓穴前面烧香，怕因火苗引起不可预料的事情发生，如果需要烧香，可以在香焚烧完之后在离开。</li>
+                        <li>守灵狮：一对狮子，一般20-25公分高，材质汉白玉，黄米玉，因狮子在我们的传统观念里是镇宅，辟邪，可以增加家人正气，
+                            官威。</li>
+                        <li>防潮盒：用来包骨灰盒的，起到防潮的作用，保存骨灰盒完整不腐烂，树脂材质的，可防10-15年左右。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <p>通过本网站在线客服或致电本网站购墓的客户，可享受网上直销价格，即可在根据不同墓型在墓园标准报价的基础上享受一定的价格！</p>
+        <p>Copyright © 2016 公墓直销网 沪ICP16008858号-2</p>
+    </div>
+</div>
+</body>
+</html>
